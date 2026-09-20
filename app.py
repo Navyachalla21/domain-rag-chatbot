@@ -111,7 +111,7 @@ else:
 
         with st.chat_message("assistant", avatar="📄"):
             st.write(a)
-    if "could not find this information" not in a.lower():
+            if "could not find this information" not in a.lower():
                 with st.expander("📄 Sources used"):
                     for c in chunks:
                         st.caption(f"{c['source']} — page {c['page']}")
@@ -120,10 +120,10 @@ else:
     user_question = st.chat_input("Ask a question about your documents...")
 
     if user_question:
-        with st.chat_message("user"):
+        with st.chat_message("user", avatar="🧑"):
             st.write(user_question)
 
-        with st.chat_message("assistant"):
+        with st.chat_message("assistant", avatar="📄"):
             with st.spinner("Thinking..."):
                 chunks = st.session_state.store.search(user_question, top_k=4)
                 answer = generate_answer(user_question, chunks)
