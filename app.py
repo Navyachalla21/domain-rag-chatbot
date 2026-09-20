@@ -44,11 +44,247 @@ st.markdown("""
     [data-testid="stFileUploader"] {
         border-radius: 10px;
     }
+st.markdown("""
+<style>
+    .stApp {
+        background-color: #f7f9fc;
+    }
+    h1 {
+        color: #1e293b;
+        font-weight: 700;
+    }
+    [data-testid="stSidebar"] {
+        background-color: #eef2f9;
+        border-right: 1px solid #dde3ee;
+    }
+    .stChatMessage {
+        border-radius: 14px;
+        padding: 10px 14px;
+        margin-bottom: 8px;
+    }
+    [data-testid="stChatMessageContent"] {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .stButton button {
+        border-radius: 8px;
+        font-weight: 500;
+    }
+    .stExpander {
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+    }
+    [data-testid="stFileUploader"] {
+        border-radius: 10px;
+    }
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #f7f9fc;
+        z-index: 999;
+        padding: 12px 0 8px 0;
+        border-bottom: 1px solid #dde3ee;
+    }
+    .sticky-header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+    st.markdown("""
+<style>
+    .stApp {
+        background-color: #f7f9fc;
+    }
+    h1 {
+        color: #1e293b;
+        font-weight: 700;
+    }
+    [data-testid="stSidebar"] {
+        background-color: #eef2f9;
+        border-right: 1px solid #dde3ee;
+    }
+    .stChatMessage {
+        border-radius: 14px;
+        padding: 10px 14px;
+        margin-bottom: 8px;
+    }
+    [data-testid="stChatMessageContent"] {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .stButton button {
+        border-radius: 8px;
+        font-weight: 500;
+    }
+    .stExpander {
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+    }
+    [data-testid="stFileUploader"] {
+        border-radius: 10px;
+    }
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #f7f9fc;
+        z-index: 999;
+        padding: 12px 0 8px 0;
+        border-bottom: 1px solid #dde3ee;
+    }
+    .sticky-header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+   st.markdown("""
+<style>
+    .stApp {
+        background-color: #f7f9fc;
+    }
+    h1 {
+        color: #1e293b;
+        font-weight: 700;
+    }
+    [data-testid="stSidebar"] {
+        background-color: #eef2f9;
+        border-right: 1px solid #dde3ee;
+    }
+    .stChatMessage {
+        border-radius: 14px;
+        padding: 10px 14px;
+        margin-bottom: 8px;
+    }
+    [data-testid="stChatMessageContent"] {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .stButton button {
+        border-radius: 8px;
+        font-weight: 500;
+    }
+    .stExpander {
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+    }
+    [data-testid="stFileUploader"] {
+        border-radius: 10px;
+    }
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #f7f9fc;
+        z-index: 999;
+        padding: 12px 0 8px 0;
+        border-bottom: 1px solid #dde3ee;
+    }
+    .sticky-header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+    st.markdown("""
+<style>
+    .stApp {
+        background-color: #f7f9fc;
+    }
+    h1 {
+        color: #1e293b;
+        font-weight: 700;
+    }
+    [data-testid="stSidebar"] {
+        background-color: #eef2f9;
+        border-right: 1px solid #dde3ee;
+    }
+    .stChatMessage {
+        border-radius: 14px;
+        padding: 10px 14px;
+        margin-bottom: 8px;
+    }
+    [data-testid="stChatMessageContent"] {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .stButton button {
+        border-radius: 8px;
+        font-weight: 500;
+    }
+    .stExpander {
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+    }
+    [data-testid="stFileUploader"] {
+        border-radius: 10px;
+    }
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #f7f9fc;
+        z-index: 999;
+        padding: 12px 0 8px 0;
+        border-bottom: 1px solid #dde3ee;
+    }
+    .sticky-header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+    st.markdown("""
+<style>
+    .stApp {
+        background-color: #f7f9fc;
+    }
+    h1 {
+        color: #1e293b;
+        font-weight: 700;
+    }
+    [data-testid="stSidebar"] {
+        background-color: #eef2f9;
+        border-right: 1px solid #dde3ee;
+    }
+    .stChatMessage {
+        border-radius: 14px;
+        padding: 10px 14px;
+        margin-bottom: 8px;
+    }
+    [data-testid="stChatMessageContent"] {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .stButton button {
+        border-radius: 8px;
+        font-weight: 500;
+    }
+    .stExpander {
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+    }
+    [data-testid="stFileUploader"] {
+        border-radius: 10px;
+    }
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #f7f9fc;
+        z-index: 999;
+        padding: 12px 0 8px 0;
+        border-bottom: 1px solid #dde3ee;
+    }
+    .sticky-header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+    .sticky-header p {
+        margin: 4px 0 0 0;
+        color: #64748b;
+        font-size: 14px;
+    }
+
 </style>
+
 """, unsafe_allow_html=True)
 
-st.title("📄 Domain-Specific RAG Chatbot")
-st.caption("Ask questions answered only from your uploaded documents — grounded, source-cited, no hallucinations.")
+st.markdown("""
+<div class="sticky-header">
+    <h1>📄 Domain-Specific RAG Chatbot</h1>
+    <p>Ask questions answered only from your uploaded documents — grounded, source-cited, no hallucinations.</p>
+</div>
+""", unsafe_allow_html=True)
 
 # Initialize session state
 if "history" not in st.session_state:
