@@ -1,3 +1,4 @@
+import streamlit as st
 from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
@@ -5,9 +6,14 @@ import pickle
 import os
 
 
+@st.cache_resource
+def load_embedding_model(model_name="all-MiniLM-L6-v2"):
+    return SentenceTransformer(model_name)
+
+
 class VectorStore:
     def __init__(self, model_name="all-MiniLM-L6-v2"):
-        self.model = SentenceTransformer(model_name)
+        self.model = load_embedding_model(model_name)
         self.index = None
         self.chunks = []  # keeps chunk text + metadata, same order as vectors in the index
 
@@ -59,7 +65,6 @@ if __name__ == "__main__":
     store.save()
     print(f"Vector store built and saved with {len(chunks)} chunks.")
 
-    # Quick sanity test
     results = store.search("What is a list comprehension?", top_k=3)
     print("\nTop matches for test query:")
     for r in results:
