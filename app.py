@@ -138,10 +138,14 @@ st.markdown("""
 
 MAX_FILE_SIZE_MB = 50
 
-
-def format_sources(chunks):
+def format_sources(chunks, top_n=1):
+    """Show only the page(s) of the most relevant chunk(s), not every
+    retrieved chunk. `chunks` is assumed ordered by relevance (best match
+    first), so slicing to top_n gives the page the answer actually came
+    from instead of a blended list across all retrieved chunks."""
+    best_chunks = chunks[:top_n]
     grouped = {}
-    for c in chunks:
+    for c in best_chunks:
         grouped.setdefault(c["source"], set()).add(c["page"])
     lines = []
     for source, pages in grouped.items():
@@ -149,7 +153,6 @@ def format_sources(chunks):
         label = "page" if len(pages) == 1 else "pages"
         lines.append(f"{source} — {label} {page_list}")
     return lines
-
 
 def strip_inline_sources(text):
     """Remove inline [Source: ...] mentions from the model's answer text,
