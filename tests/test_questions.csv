@@ -1,0 +1,8 @@
+question_no,question,answer,source_pdf,pages,status
+1,"Hi","I could not find this information in the uploaded documents.","Python interview Q&A_.pdf","","No info (expected)"
+2,"What are the basic data types in Python?","Integer, Float, String, Boolean, List","Python interview Q&A_.pdf","4","Pass"
+3,"How do you split a string into a list of substrings in Python?","Use str.split(), e.g. 'Hello,World'.split(',') -> ['Hello', 'World']","Python interview Q&A_.pdf","9","Pass"
+4,"Q.2 How do you write an if-else statement in Python?","if condition: ... else: ...","Python interview Q&A_.pdf","10","Pass"
+5,"How do you swap the values of two variables in Python?","Use a temp variable or simultaneous assignment: a, b = b, a","Python interview Q&A_.pdf","13","Pass"
+6,"How do you create a scatter plot using Seaborn?","Use seaborn's scatterplot() with x and y columns from a DataFrame","Python interview Q&A_.pdf","19","Pass"
+7,"How do you save and load a trained model in Scikit-learn?","Use joblib.dump() to save and joblib.load() to load","Python interview Q&A_.pdf","25","Pass"
