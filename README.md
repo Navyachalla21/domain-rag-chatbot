@@ -2,7 +2,7 @@
 
 **Live App:** [https://domain-rag-chatbotgi-jajxu6e28othk9ehy6ys7j.streamlit.app](https://domain-rag-chatbotgi-jajxu6e28othk9ehy6ys7j.streamlit.app)
 
-**GitHub Repository:** https://github.com/Navyachalla21/domain-rag-chatbothttps://github.com/Navyachalla21/domain-rag-chatbot
+**GitHub Repository:** https://github.com/Navyachalla21/domain-rag-chatbot
 
 A Retrieval-Augmented Generation (RAG) chatbot that answers questions strictly from user-uploaded PDF documents. It retrieves the most relevant passages from the uploaded content and generates grounded answers — citing the exact source document and page number, and refusing to answer when the information isn't present in the documents.
 
@@ -19,11 +19,12 @@ Large documents are difficult to search manually — a user may need to read thr
 | Text splitting | LangChain text splitters |
 | Embeddings | Sentence Transformers (`all-MiniLM-L6-v2`) |
 | Vector database | FAISS |
-| Language model | Google Gemini (`gemini-3.6-flash`) |
+| Language model | Google Gemini (`gemini-3.6-flash`), called via Langchain's `langchain_google_genai` integration |
 | User interface | Streamlit |
 | Environment variables | python-dotenv |
 | Deployment | Streamlit Community Cloud |
 | Version control | Git and GitHub |
+
 
 ## How It Works
 
@@ -32,7 +33,7 @@ Large documents are difficult to search manually — a user may need to read thr
 3. The extracted text is split into smaller overlapping chunks (chunk size ~800 characters, overlap ~120 characters) so each chunk captures a focused idea.
 4. Each chunk is converted into a numerical embedding using the `all-MiniLM-L6-v2` model and stored in a FAISS vector index, alongside its source/page metadata.
 5. When the user asks a question, the question is embedded the same way, and FAISS retrieves the most similar chunks.
-6. The retrieved chunks and the question are sent to Gemini with a strict prompt: answer only from the given context, mention the source document and page number, explicitly say "I could not find this information in the uploaded documents" if the answer isn't present. Source citations are also independently verified and displyed by the UI using the retrieved chunks' metadata
+6. The retrieved chunks and the question are sent to Gemini with a strict prompt: answer only from the given context, mention the source document and page number, explicitly say "I could not find this information in the uploaded documents" if the answer isn't present. Source citations are also independently verified and displayed by the UI using the retrieved chunks' metadata
 7. The answer is displayed in a chat interface, with the exact source document(s) and page number(s) shown alongside it.
 
 ## Architecture
@@ -90,7 +91,7 @@ streamlit run app.py
 - Upload a PDF (or multiple) via the sidebar
 - Click **Process Documents**
 - Ask questions in the chat box — answers are grounded only in the uploaded content, with sources shown below each answer
-- Use **Clear chat** to reset the conversation, or **Clear Docs** to remove uploaded documents and start fresh with new files
+- Use **Clear Chat** to reset the conversation, or **Clear Docs** to remove uploaded documents and start fresh with new files
 
 ## Testing
 

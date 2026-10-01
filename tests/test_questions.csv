@@ -1,8 +1,8 @@
-question_no,question,answer,source_pdf,pages,status
-1,"Hi","I could not find this information in the uploaded documents.","Python interview Q&A_.pdf","","No info (expected)"
-2,"What are the basic data types in Python?","Integer, Float, String, Boolean, List","Python interview Q&A_.pdf","4","Pass"
-3,"How do you split a string into a list of substrings in Python?","Use str.split(), e.g. 'Hello,World'.split(',') -> ['Hello', 'World']","Python interview Q&A_.pdf","9","Pass"
-4,"Q.2 How do you write an if-else statement in Python?","if condition: ... else: ...","Python interview Q&A_.pdf","10","Pass"
-5,"How do you swap the values of two variables in Python?","Use a temp variable or simultaneous assignment: a, b = b, a","Python interview Q&A_.pdf","13","Pass"
-6,"How do you create a scatter plot using Seaborn?","Use seaborn's scatterplot() with x and y columns from a DataFrame","Python interview Q&A_.pdf","19","Pass"
-7,"How do you save and load a trained model in Scikit-learn?","Use joblib.dump() to save and joblib.load() to load","Python interview Q&A_.pdf","25","Pass"
+question,category,expected_source,expected_page,retrieved_source,retrieved_page,correct,groundedness,refusal_correct,notes
+"Hi","out-of-scope","N/A","N/A","N/A","N/A","N/A","N/A","Pass","Correctly refused with fallback message"
+"What are the basic data types in Python?","in-scope","Python interview Q&A_.pdf","4","Python interview Q&A_.pdf","4","Yes","Grounded","N/A",""
+"How do you split a string into a list of substrings in Python?","in-scope","Python interview Q&A_.pdf","9","Python interview Q&A_.pdf","9","Yes","Grounded","N/A",""
+"Q.2 How do you write an if-else statement in Python?","in-scope","Python interview Q&A_.pdf","10","Python interview Q&A_.pdf","10","Yes","Grounded","N/A",""
+"How do you swap the values of two variables in Python?","in-scope","Python interview Q&A_.pdf","13","Python interview Q&A_.pdf","13","Yes","Grounded","N/A",""
+"How do you create a scatter plot using Seaborn?","in-scope","Python interview Q&A_.pdf","19","Python interview Q&A_.pdf","19","Yes","Grounded","N/A",""
+"How do you save and load a trained model in Scikit-learn?","in-scope","Python interview Q&A_.pdf","25","Python interview Q&A_.pdf","25","Yes","Grounded","N/A",""

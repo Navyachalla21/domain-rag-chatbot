@@ -165,10 +165,12 @@ st.markdown("""
     <div class="app-logo">RAG</div>
     <div class="app-header-text">
         <h1>Domain-Specific RAG Chatbot</h1>
-        <p>Ask questions answered only from your uploaded documents — grounded, source-cited, no hallucinations.</p>
+        <p>Ask questions answered only from your uploaded documents — grounded in retrieved content, with sources cited for every answer.</p>
     </div>
 </div>
 """, unsafe_allow_html=True)
+
+st.caption("⚠️ This assistant answers only from the uploaded documents. Always verify important or high-stakes information against the original source before relying on it.")
 
 if "history" not in st.session_state:
     st.session_state.history = []
