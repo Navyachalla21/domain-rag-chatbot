@@ -7,7 +7,7 @@ from vector_store import VectorStore
 from prompt import generate_answer
 
 st.set_page_config(
-    page_title="Domain RAG Chatbot",
+    page_title="Domain-Specific RAG Chatbot for PDF Question Answering",
     page_icon="📄",
     layout="centered"
 )
@@ -165,7 +165,7 @@ st.markdown("""
     <div class="app-logo">RAG</div>
     <div class="app-header-text">
         <h1>Domain-Specific RAG Chatbot</h1>
-        <p>Ask questions answered only from your uploaded documents — grounded in retrieved content, with sources cited for every answer.</p>
+        <p>Grounded, source-cited answers from your uploaded documents.</p>
     </div>
 </div>
 """, unsafe_allow_html=True)

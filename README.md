@@ -1,6 +1,6 @@
-# 📄 Domain-Specific RAG Chatbot
+# 📄 Domain-Specific RAG Chatbot for PDF Question Answering
 
-**Live App:** [https://domain-rag-chatbotgi-jajxu6e28othk9ehy6ys7j.streamlit.app](https://domain-rag-chatbotgi-jajxu6e28othk9ehy6ys7j.streamlit.app)
+**Live App:** https://domain-rag-chatbotgi-jajxu6e28othk9ehy6ys7j.streamlit.app
 
 **GitHub Repository:** https://github.com/Navyachalla21/domain-rag-chatbot
 
