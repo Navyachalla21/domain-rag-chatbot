@@ -18,3 +18,6 @@ question,category,expected_source,expected_page,retrieved_source,retrieved_page,
 "EnumSet class declaration","in-scope","FREE Java Interview Master Guide — 150+ Questions.pdf","68","FREE Java Interview Master Guide — 150+ Questions.pdf","68","Yes","Grounded","N/A",""
 "Java Reflection API","in-scope","FREE Java Interview Master Guide — 150+ Questions.pdf","75","FREE Java Interview Master Guide — 150+ Questions.pdf","75","Yes","Grounded","N/A",""
 "Close the connection object","in-scope","FREE Java Interview Master Guide — 150+ Questions.pdf","79","FREE Java Interview Master Guide — 150+ Questions.pdf","79","Yes","Grounded","N/A",""
+"What is the capital of France?","out-of-scope","N/A","N/A","N/A","N/A","N/A","N/A","Pass","Correctly refused — unrelated to uploaded Python/Java PDFs"
+"How do you make biryani?","out-of-scope","N/A","N/A","N/A","N/A","N/A","N/A","Pass","Correctly refused — unrelated to uploaded Python/Java PDFs"
+"What is the difference between Java and JavaScript?","edge-case","N/A","N/A","N/A","N/A","N/A","N/A","Pass","Plausible-sounding Java-adjacent question, correctly refused rather than hallucinating a comparison not present in the Java interview guide"

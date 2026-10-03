@@ -95,7 +95,10 @@ streamlit run app.py
 
 ## Testing
 
-The chatbot was tested with 19 questions, primarily in-scope questions answerable directly from the uploaded PDFs (Python and Java interview guides), plus one no-information case ("Hi") confirming the refusal guardrail triggers correctly when a query isn't a real content question.
+The chatbot was tested with 22 questions covering three categories:
+- **In-scope questions** — directly answerable from the uploaded PDFs (Python and Java interview guides), verified against the correct source document and page number.
+- **Edge-case questions** — plausible-sounding, topic-adjacent questions not actually covered in either document, correctly triggering a refusal instead of a hallucinated answer.
+- **Out-of-scope questions** — entirely unrelated to the uploaded documents, confirming the refusal guardrail works correctly.
 
 Full results are in [`tests/test_questions.csv`](tests/test_questions.csv).
 
