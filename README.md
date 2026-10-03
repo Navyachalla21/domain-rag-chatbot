@@ -95,10 +95,7 @@ streamlit run app.py
 
 ## Testing
 
-The chatbot was tested with 15 questions covering three categories:
-- **In-scope questions** — directly answerable from the uploaded PDF content
-- **Edge-case questions** — reasonable questions that may not be explicitly covered
-- **Out-of-scope questions** — unrelated to the uploaded documents, to confirm the refusal guardrail works correctly
+The chatbot was tested with 19 questions, primarily in-scope questions answerable directly from the uploaded PDFs (Python and Java interview guides), plus one no-information case ("Hi") confirming the refusal guardrail triggers correctly when a query isn't a real content question.
 
 Full results are in [`tests/test_questions.csv`](tests/test_questions.csv).
 
@@ -112,4 +109,7 @@ Full results are in [`tests/test_questions.csv`](tests/test_questions.csv).
 
 - The chatbot only answers from retrieved document context and explicitly refuses when information isn't found, rather than inventing an answer.
 - API keys are never committed to the repository (`.env` is git-ignored) and are stored securely as encrypted secrets on Streamlit Cloud.
+- A visible disclaimer reminds users to verify important or high-stakes information against the original source.
+- The system prompt instructs the model to treat any instruction-like text inside uploaded documents as ordinary content, not as commands — guarding against prompt injection via document content.
+
 
